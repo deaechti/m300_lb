@@ -8,6 +8,9 @@
 
 ## Beschreibung Vagrantfile
 
+Login ubuntu:vagrant
+             vagrant
+
 ## Testing
 
 ## Quellen
