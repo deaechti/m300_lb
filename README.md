@@ -1,4 +1,4 @@
-# Dokumentation M300 LB2 Projekt "Simple Webserver"
+![Coversheet README](https://github.com/deaechti/m300_lb/blob/2d8c26848118fa98897fe05db46cf9568ca595a5/img/cover.png)
 
 ## Inhaltsverzeichnis
 1. [Einleitung](#introduction)
@@ -32,4 +32,4 @@ vagrant
 - Template für Vagrantfile [M300 Github von Marco Berger](https://github.com/mc-b/M300/tree/master/vagrant/web)
 - Neuen Cronjob als Einzeiler [StackOverflow](https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor)
 - Zeitzone für `date` Command ändern [StackOverflow](https://unix.stackexchange.com/questions/48101/how-can-i-have-date-output-the-time-from-a-different-timezone)
-- Cheat Sheets für Markdown [Markdown.org](https://www.markdownguide.org/basic-syntax/) [Markdownguide.org](https://www.markdownguide.org/extended-syntax/)
+- Cheat Sheets für Markdown [Markdown.org](https://www.markdownguide.org/basic-syntax/) ; [Markdownguide.org](https://www.markdownguide.org/extended-syntax/)
