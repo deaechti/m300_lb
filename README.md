@@ -16,7 +16,7 @@ Ich wollte als Projekt nicht all zu grosses machen und habe in Vagrant eher auf 
 Die Lösung startet automatisch eine Ubuntu VM und installiert einen Apache Webserver. Danach wird ein simples Skript zum darstellen des Datums und der aktuellen Systemprozessen in einem Textfile erstellt und mit executable-Rechten vergeben. Das Skript wird initial ausgeführt. Zuletzt wird noch ein automatisierter Cronjob ausgeführt, damit die Daten immer aktuell bleiben.
 
 ## Visio zur Vagrantbox <a name="visio"></a>
-
+![Visio Umgebung](https://github.com/deaechti/m300_lb/blob/2d8c26848118fa98897fe05db46cf9568ca595a5/img/cover.png)
 
 ## Informationen zu der Vagrantbox <a name="vagrantinfo"></a>
 Login ubuntu:vagrant
