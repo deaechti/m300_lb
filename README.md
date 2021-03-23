@@ -1,4 +1,4 @@
-![Coversheet README](https://github.com/deaechti/m300_lb/blob/2d8c26848118fa98897fe05db46cf9568ca595a5/img/cover.png)
+![Coversheet README](https://github.com/deaechti/m300_lb/blob/1b9dfc791cb8da2faa5c580a7c91193d7af37078/img/cover.png)
 
 ## Inhaltsverzeichnis
 1. [Einleitung](#introduction)
@@ -17,7 +17,8 @@ Die Lösung startet automatisch eine Ubuntu VM und installiert einen Apache Webs
 
 ## Tutorial <a name="tutorial"></a>
 1. Als erstes im Verzeichnis mit dem vagrantfile in einer Git Bash-Konsole den Befehl `vagrant up` ausführen.
-2. In beliebigem Webbrowser `http://localhost:8080/processes` aufrufen.
+1. In beliebigem Webbrowser `http://localhost:8080/processes` aufrufen.
+1. Wenn man die Maschine nicht mehr braucht, mit `vagrant destroy` wieder löschen.
 
 ## Visio zur Vagrantbox <a name="visio"></a>
 ![Visio Umgebung](https://github.com/deaechti/m300_lb/blob/0b60e5cdc9acc233afdbb2f939b506df52693e93/img/visio.png)
