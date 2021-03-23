@@ -19,28 +19,36 @@ Die Lösung startet automatisch eine Ubuntu VM und installiert einen Apache Webs
 
 ## Der Code im Detail <a name="codeexplained"></a>
 >`Vagrant.configure(2) do |config|`  
+
 Hier wird die Konfiguration von der Vagrantbox gestartet. die `2` legt fest, dass die neuste Version von Vagrant verwendet wird.
 
 >`config.vm.box = "ubuntu/xenial64"`  
+
 Hier wird das Betriebssystem der VM festgelegt, in diesem Falle eine Ubuntu/Xenial 64-bit Maschine.
 
 >`config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true`  
+
 Hier wird die Portweiterleitung konfiguriert. Der Port 80 der VM wird auf den Port 8080 auf dem Hostsystem weitergeleitet. `auto_correct: true` legt fest, dass allfällige Kollisionen (z.B. falls Port 8080 auf dem Host bereits belegt ist) automatisch korrigiert werden.
 
 >`config.vm.synced_folder ".", "/var/www/html"`  
+
 Die Synchronisierten Ordner werden direkt mit dem Hostsystem synchronisiert, also sind die Files aus `/var/www/html` auch auf dem Hostsystem im Ordner mit dem Vagrantfile gespeichert werden.
 
 >`config.vm.provider "virtualbox" do |vb|`  
+
 Hier wird der Hypervisor definiert, in diesem Fall VirtualBox. Hier wird auch direkt die Konfiguration in VirtualBox gestartet.
 
 >`vb.memory = "512"`  
+
 Der RAM wird in MB definiert.
 
->`config.vm.provision "shell", inline: <<-SHELL`
+>`config.vm.provision "shell", inline: <<-SHELL`  
+
 Die konfiguration in der Linux-Konsole wird gestartet.
 
 >`sudo apt-get update`  
 >`sudo apt-get -y install apache2`  
+
 Der Appkatalog wird aktualisiert und der Apache-Webservice wird installiert.
 
 
@@ -52,4 +60,4 @@ Der Appkatalog wird aktualisiert und der Apache-Webservice wird installiert.
 - Template für Vagrantfile [M300 Github von Marco Berger](https://github.com/mc-b/M300/tree/master/vagrant/web)
 - Neuen Cronjob als Einzeiler [StackOverflow](https://stackoverflow.com/questions/878600/how-to-create-a-cron-job-using-bash-automatically-without-the-interactive-editor)
 - Zeitzone für `date` Command ändern [StackOverflow](https://unix.stackexchange.com/questions/48101/how-can-i-have-date-output-the-time-from-a-different-timezone)
-- Cheat Sheets für Markdown [Markdown.org](https://www.markdownguide.org/basic-syntax/) ; [Markdownguide.org](https://www.markdownguide.org/extended-syntax/)
+- Cheat Sheets für Markdown [Mgitarkdown.org](https://www.markdownguide.org/basic-syntax/) ; [Markdownguide.org](https://www.markdownguide.org/extended-syntax/)
