@@ -10,7 +10,16 @@
 
 version: "2"
 services:
-
+  db:
+      image: mariadb
+      environment:
+          - MYSQL_ROOT_PASSWORD=root
+          - MYSQL_DATABASE=radio
+      volumes:
+          - ./database:/var/lib/mysql
+      networks:
+        v_net:
+            ipv4_address: 192.168.60.100
 
 networks:
     v_net:
