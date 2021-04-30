@@ -1,0 +1,20 @@
+############
+#
+#   project: MariaDB with phpMyAdmin
+#   owner:   Deryl Schmid
+#   creation date: 28.04.2021
+#   last change: 30.04.2021
+#   
+############
+
+
+version: "2"
+services:
+
+
+networks:
+    v_net:
+        ipam:
+            driver: default
+            config:
+                - subnet: 192.168.60.0/24
