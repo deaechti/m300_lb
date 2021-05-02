@@ -3,10 +3,9 @@
 #   project: MariaDB with phpMyAdmin
 #   owner:   Deryl Schmid
 #   creation date: 28.04.2021
-#   last change: 30.04.2021
+#   last change: 02.05.2021
 #   
 ############
-
 
 version: "2"
 services:
@@ -14,13 +13,13 @@ services:
       image: mariadb
       environment:
           - MYSQL_ROOT_PASSWORD=root
-          - MYSQL_DATABASE=radio
+          - MYSQL_DATABASE=defaultdb
       volumes:
           - ./database:/var/lib/mysql
       networks:
         v_net:
             ipv4_address: 192.168.60.100
-phpmyadmin:
+  phpmyadmin:
       image: phpmyadmin/phpmyadmin
       container_name: phpmyadmin
       environment:
@@ -35,6 +34,7 @@ phpmyadmin:
       networks:
         v_net:
             ipv4_address: 192.168.60.101
+            
 networks:
     v_net:
         ipam:
